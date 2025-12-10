@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Comfort Hotels | Contacto</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/img/hotel_favicon.svg">
+    <meta name="description" content="Cadena de hoteles Premium en destinos Nacionales de turismo">
+    <meta name="keywords" content="hotel, hoteles, premium, turismo, nacional, contacto, reserva">
+    <meta name="author" content="Nahuel Enciso">
+</head>
+
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <h1 class="fs-2">HOTELES COMFORT</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../indexb.html">HOTELES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./habitacionesb.html">HABITACIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./serviciosb.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ubicacionb.html">UBICACION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+        <Section id="reservar">
+            <div class="card">
+                <form class="form" action="#" method="" novalidate>
+                    <h2 class="fs-3 card-title">FORMULARIO DE RESERVA</h2>
+                    <div class="card-body">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zÀ-ÿ\s]+"
+                            title="Solo letras y espacios" />
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" required pattern="[A-Za-zÀ-ÿ\s]+"
+                            title="Solo letras y espacios" />
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required title="Formato de email valido" />
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]+"
+                            title="Solo números" />
+                        <label for="adultos">Adultos</label>
+                        <input type="number" id="adultos" name="adultos" required pattern="[0-9]+"
+                            title="Solo números" />
+                        <label for="menores">Menores</label>
+                        <input type="number" id="menores" name="menores" required pattern="[0-9]+"
+                            title="Solo números" />
+                        <label for="hotel">Hotel</label>
+                        <select id="hotel" name="hotel" required title="Seleccion de Hotel">
+                            <option value="" disabled selected>Seleccione el Hotel</option>
+                            <option value="recoleta">Comfort Recoleta</option>
+                            <option value="iguazu">Comfort Iguazu</option>
+                            <option value="chapelco">Comfort Chapelco</option>
+                        </select>
+                        <label for="categoria">Habitacion</label>
+                        <select id="categoria" name="categoria" requiredtitle="Seleccion de Categoria">
+                            <option value="" disabled selected>Seleccione una Categoria</option>
+                            <option value="standard">Standard</option>
+                            <option value="superior">Superior</option>
+                            <option value="premium">Premium</option>
+                        </select>
+                        <label for="fechaIngreso">Ingreso</label>
+                        <input type="date" id="fechaIngreso" name="fechaIngreso" required
+                            title="Seleccion Fecha de Ingreso" />
+                        <label for="fechaSalida">Salida</label>
+                        <input type="date" id="fechaSalida" name="fechaSalida" required
+                            title="Seleccion Fecha de Salida" />
+                    </div>
+                    <input type="submit" value="Solicitar reserva" title="Enviar solicitud" />
+                </form>
+            </div>
+        </Section>
+    </main>
+    <footer class="footer-float">
+        <span class="izquierda">Seguinos en Redes:
+            <br><a href="https://www.Instagram.com" target="_blank"> Instagram</a>
+            <br><a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <br><a href="https://www.x.com" target="_blank"> X (Twitter)</a>
+            <br><a href="https://www.tiktok.com" target="_blank"> TikTok</a></span>
+        <span class="derecha"> DISEÑO WEB: NAHUEL ENCISO </span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

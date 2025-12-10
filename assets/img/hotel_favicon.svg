@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Fondo -->
+  <rect width="128" height="128" fill="#2C3E50"/>
+  
+  <!-- Edificio principal -->
+  <rect x="30" y="45" width="68" height="70" fill="#ECF0F1"/>
+  
+  <!-- Ventanas del edificio -->
+  <rect x="38" y="52" width="12" height="12" fill="#3498DB"/>
+  <rect x="58" y="52" width="12" height="12" fill="#3498DB"/>
+  <rect x="78" y="52" width="12" height="12" fill="#3498DB"/>
+  
+  <rect x="38" y="70" width="12" height="12" fill="#3498DB"/>
+  <rect x="58" y="70" width="12" height="12" fill="#3498DB"/>
+  <rect x="78" y="70" width="12" height="12" fill="#3498DB"/>
+  
+  <rect x="38" y="88" width="12" height="12" fill="#3498DB"/>
+  <rect x="78" y="88" width="12" height="12" fill="#3498DB"/>
+  
+  <!-- Puerta de entrada -->
+  <rect x="54" y="88" width="20" height="27" fill="#8B4513"/>
+  <circle cx="70" cy="100" r="1.5" fill="#FFD700"/>
+  
+  <!-- Techo -->
+  <polygon points="30,45 64,30 98,45" fill="#E74C3C"/>
+  
+  <!-- 5 Estrellas encima del hotel -->
+  <!-- Estrella central (más grande) -->
+  <polygon points="64,15 66.5,22 74,22 68,26.5 70.5,34 64,29 57.5,34 60,26.5 54,22 61.5,22" fill="#FFD700"/>
+  
+  <!-- Estrella izquierda 1 -->
+  <polygon points="42,20 43.5,24 47,24 44,26 45,30 42,28 39,30 40,26 37,24 40.5,24" fill="#FFD700"/>
+  
+  <!-- Estrella izquierda 2 -->
+  <polygon points="26,28 27,31 30,31 28,33 29,36 26,34 23,36 24,33 22,31 25,31" fill="#FFD700"/>
+  
+  <!-- Estrella derecha 1 -->
+  <polygon points="86,20 87.5,24 91,24 88,26 89,30 86,28 83,30 84,26 81,24 84.5,24" fill="#FFD700"/>
+  
+  <!-- Estrella derecha 2 -->
+  <polygon points="102,28 103,31 106,31 104,33 105,36 102,34 99,36 100,33 98,31 101,31" fill="#FFD700"/>
+</svg>
