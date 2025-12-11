@@ -29,8 +29,28 @@ body {
 }
 
 /* ============================================ */
-/* CSS PARA CARDS */
+/* CSS PARA CARDS DE HOTELES.HTML */
 /* ============================================ */
+
+
+/* Contenedor principal que aloja todas las cards */
+main {
+  display: flex; /* Convierte main en un contenedor flex */
+  flex-direction: column; /* Por defecto, apila las cards verticalmente */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 1400px; /* Ancho máximo de 1400px para evitar que se estire demasiado */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; /* Espaciado interno de 20px */
+}
+
+/* Contenedor individual para cada card */
+.caja-index {
+  text-align: center; /* Centra el texto dentro de caja-index */
+  display: flex; /* Convierte caja-index en un contenedor flex */
+  flex-direction: column; /* Apila el contenido verticalmente */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
 .card {
   display: flex; /* Convierte la card en un contenedor flex */
   flex-direction: column; /* Apila los elementos de la card verticalmente */
@@ -100,25 +120,7 @@ body {
   background-image: linear-gradient(45deg, #2d69da, cornflowerblue); /* Gradiente azul al pasar el mouse */
 }
 
-/* ============================================ */
-/* CSS PARA CARDS DE HOTELES.HTML */
-/* ============================================ */
-/* Contenedor principal que aloja todas las cards */
-main {
-  display: flex; /* Convierte main en un contenedor flex */
-  flex-direction: column; /* Por defecto, apila las cards verticalmente */
-  width: 100%; /* Ocupa todo el ancho disponible */
-  max-width: 1400px; /* Ancho máximo de 1400px para evitar que se estire demasiado */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-  padding: 20px; /* Espaciado interno de 20px */
-}
 
-/* Contenedor individual para cada card */
-.caja-index {
-  display: flex; /* Convierte caja-index en un contenedor flex */
-  flex-direction: column; /* Apila el contenido verticalmente */
-  width: 100%; /* Ocupa todo el ancho disponible */
-}
 
 /* ============================================ */
 /* ESTILOS RESPONSIVE PARA MÓVILES */
@@ -203,7 +205,7 @@ form {
 .footer-float a {
   color: #ffffff !important; /* Color de texto blanco */
   text-decoration: none !important; /* Elimina el subrayado */
-  margin-left: 10%; /* Margen izquierdo del 10% */
+ /*  margin-left: 10%; Margen izquierdo del 10% */
 }
 
 /* Alineación del contenido izquierdo del footer */
