@@ -2,10 +2,14 @@
 
 /* ESTILOS GENERALES DEL BODY */
 body {
-    display: flex; /* Convierte el body en un contenedor flex */
-    flex-direction: column; /* Apila los elementos verticalmente */
-    background-color: #ddd; /* Color de fondo gris claro */
-    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+    display: flex;
+    /* Convierte el body en un contenedor flex */
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    background-color: #ddd;
+    /* Color de fondo gris claro */
+    min-height: 100vh;
+    /* Asegura que el body ocupe al menos toda la altura de la ventana */
 }
 
 /* ============================================ */
@@ -13,20 +17,26 @@ body {
 /* ============================================ */
 
 .navbar {
-    color: #ffffff !important; /* Color de texto blanco */
-    background-image: linear-gradient(135deg, cornflowerblue, #0e5cee) !important; /* Gradiente de fondo azul */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    color: #ffffff !important;
+    /* Color de texto blanco */
+    background-image: linear-gradient(135deg, cornflowerblue, #0e5cee) !important;
+    /* Gradiente de fondo azul */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
 }
 
 /* Estilos para los enlaces de navegación */
 .navbar .nav-link {
-    color: #ffffff !important; /* Color de texto blanco para los enlaces */
-    background-color: linear-gradient(45deg, #0e5cee, cornflowerblue); /* Gradiente de fondo */
+    color: #ffffff !important;
+    /* Color de texto blanco para los enlaces */
+    background-color: linear-gradient(45deg, #0e5cee, cornflowerblue);
+    /* Gradiente de fondo */
 }
 
 /* Estilo para el enlace activo (página actual) */
 .nav-link.active {
-    font-weight: 600; /* Hace el texto más grueso para destacar la página actual */
+    font-weight: 600;
+    /* Hace el texto más grueso para destacar la página actual */
 }
 
 /* ============================================ */
@@ -34,71 +44,115 @@ body {
 /* ============================================ */
 
 .card {
-    display: flex; /* Convierte la card en un contenedor flex */
-    flex-direction: column; /* Apila los elementos de la card verticalmente */
-    border: 1px solid #000000; /* Borde negro de 1px */
-    border-radius: 8px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px #000000; /* Sombra para dar profundidad */
-    overflow: hidden; /* Oculta cualquier contenido que se desborde */
-    margin: 20px; /* Margen exterior de 20px en todos los lados */
-    height: 100%; /* Hace que todas las cards tengan la misma altura */
+    display: flex;
+    /* Convierte la card en un contenedor flex */
+    flex-direction: column;
+    /* Apila los elementos de la card verticalmente */
+    border: 1px solid #000000;
+    /* Borde negro de 1px */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px #000000;
+    /* Sombra para dar profundidad */
+    overflow: hidden;
+    /* Oculta cualquier contenido que se desborde */
+    margin: 20px;
+    /* Margen exterior de 20px en todos los lados */
+    padding: 0 10px;
+    /*margen para que las imagenes no queden pegadas al borde*/
+    height: 100%;
+    /* Hace que todas las cards tengan la misma altura */
+    text-align: center;
 }
 
 /* Estilos específicos para el card-body de la sección reservar */
-#reservar .card-body{
-    padding: 20px; /* Espaciado interno de 20px */
-    text-align: center; /* Centra el texto horizontalmente */
+#reservar .card-body {
+    padding: 20px;
+    /* Espaciado interno de 20px */
+    text-align: center;
+    /* Centra el texto horizontalmente */
 }
 
 /* Estilos para las imágenes de las cards */
 .card-img-top {
-    width: 100%; /* La imagen ocupa todo el ancho de la card */
-    height: 250px; /* Altura fija de 250px para todas las imágenes */
-    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarla */
-    border-radius: 8px; /* Redondea las esquinas */
+    width: 95%;
+    /* La imagen ocupa todo el ancho de la card */
+    height: 250px;
+    /* Altura fija de 250px para todas las imágenes */
+    object-fit: cover;
+    /* Recorta la imagen para llenar el espacio sin deformarla */
+    border-radius: 8px;
+    /* Redondea las esquinas */
 }
 
 /* Estilos para el cuerpo de la card (contenido) */
 .card-body {
-    padding: 15px; /* Espaciado interno de 15px */
-    text-align: center; /* Centra el texto horizontalmente */
-    display: flex; /* Convierte el card-body en un contenedor flex */
-    flex-direction: column; /* Apila los elementos verticalmente */
-    flex-grow: 1; /* Permite que el card-body crezca para llenar el espacio disponible */
+    padding: 15px;
+    /* Espaciado interno de 15px */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    display: flex;
+    /* Convierte el card-body en un contenedor flex */
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    flex-grow: 1;
+    /* Permite que el card-body crezca para llenar el espacio disponible */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    justify-content: space-evenly;
+    /* Distribuye el espacio de manera uniforme entre los elementos */
 }
 
 /* Estilos para el título de la card */
 .card-title {
-    font-size: 1.5em; /* Tamaño de fuente 1.5 veces el tamaño base */
-    margin-bottom: 10px; /* Espacio de 10px debajo del título */
+    font-size: 1.5em;
+    /* Tamaño de fuente 1.5 veces el tamaño base */
+    margin-bottom: 10px;
+    /* Espacio de 10px debajo del título */
 }
 
 /* Estilos para el texto descriptivo de la card */
 .card-text {
-    font-size: 1em; /* Tamaño de fuente normal (base) */
-    color: #555; /* Color gris oscuro para el texto */
-    margin-bottom: auto; /* Empuja el enlace hacia abajo, dejando este texto arriba */
+    font-size: 1em;
+    /* Tamaño de fuente normal (base) */
+    color: #555;
+    /* Color gris oscuro para el texto */
+    margin-bottom: auto;
+    /* Empuja el enlace hacia abajo, dejando este texto arriba */
 }
 
 /* Estilos para los enlaces/botones de las cards */
 .card-link {
-    text-align: center; /* Centra el texto del enlace */
-    border: 3px cornflowerblue; /* Borde azul de 3px */
-    border-style: solid; /* Estilo de borde sólido */
-    border-radius: 8px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    padding: 10px; /* Espaciado interno de 10px */
-    margin: 10px 10px 0 10px; /* Margen: 10px a los lados, 0 arriba, 10px abajo */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #ffffff; /* Color de texto blanco */
-    background-color: cornflowerblue; /* Fondo azul */
-    display: inline-block; /* Permite aplicar padding y margin al enlace */
-    margin-top: auto; /* Alinea el botón al final del card-body (parte inferior) */
+    text-align: center;
+    /* Centra el texto del enlace */
+    border: 2px cornflowerblue;
+    /* Borde azul de 3px */
+    border-style: solid;
+    /* Estilo de borde sólido */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    padding: 10px;
+    /* Espaciado interno de 10px */
+    margin: 10px 10px 0 10px;
+    /* Margen: 10px a los lados, 0 arriba, 10px abajo */
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+    color: #ffffff;
+    /* Color de texto blanco */
+    background-color: cornflowerblue;
+    /* Fondo azul */
+    display: inline-block;
+    /* Permite aplicar padding y margin al enlace */
+    margin-top: auto;
+    /* Alinea el botón al final del card-body (parte inferior) */
 }
 
 /* Efecto hover para los enlaces de las cards */
 .card-link:hover {
-    background-image: linear-gradient(45deg, #2d69da, cornflowerblue); /* Gradiente azul al pasar el mouse */
+    background-image: linear-gradient(45deg, #2d69da, cornflowerblue);
+    /* Gradiente azul al pasar el mouse */
 }
 
 /* ============================================ */
@@ -107,19 +161,68 @@ body {
 
 /* Contenedor principal que aloja todas las cards */
 main {
-    display: flex; /* Convierte main en un contenedor flex */
-    flex-direction: column; /* Por defecto, apila las cards verticalmente */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 1400px; /* Ancho máximo de 1400px para evitar que se estire demasiado */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 20px; /* Espaciado interno de 20px */
+    display: flex;
+    /* Convierte main en un contenedor flex */
+    flex-direction: column;
+    /* Por defecto, apila las cards verticalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    /*max-width: 1400px;
+     Ancho máximo de 1400px para evitar que se estire demasiado */
+    margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    /* Espaciado interno de 20px */
 }
 
 /* Contenedor individual para cada card */
 .caja-index {
-    display: flex; /* Convierte caja-index en un contenedor flex */
-    flex-direction: column; /* Apila el contenido verticalmente */
-    width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex;
+    /* Convierte caja-index en un contenedor flex */
+    flex-direction: column;
+    /* Apila el contenido verticalmente */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    padding: 5px;
+    /* Espaciado interno de 5px */
+}
+
+
+/* ============================================ */
+/* CSS PARA CARDS-SERVICIOS */
+/* ============================================ */
+
+.card-servicios {
+    display:flex;
+    /* Convierte la card en un contenedor flex */
+    flex-direction: column;
+    /* Apila los elementos de la card verticalmente */
+    border: 1px solid #000000;
+    /* Borde negro de 1px */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px #000000;
+    /* Sombra para dar profundidad */
+   /* overflow: hidden; Oculta cualquier contenido que se desborde */
+    margin: 20px;
+    /* Margen exterior de 20px en todos los lados */
+    padding: 0 10px;
+    /*margen para que las imagenes no queden pegadas al borde*/
+    height: 100%;
+    /* Hace que todas las cards tengan la misma altura */
+    text-align: center;
+}
+
+.servicios-body {
+    /* Centra el texto horizontalmente */
+    display: grid;
+    /* Convierte el card-body en un contenedor flex */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Apila los elementos verticalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    justify-content: space-evenly;
+    /* Distribuye el espacio de manera uniforme entre los elementos */
 }
 
 /* ============================================ */
@@ -128,14 +231,17 @@ main {
 /* ============================================ */
 
 @media (max-width: 767px) {
+
     /* Espaciado entre cards en móviles */
     .caja-index {
-        margin-bottom: 20px; /* Espacio de 20px debajo de cada caja-index */
+        margin-bottom: 20px;
+        /* Espacio de 20px debajo de cada caja-index */
     }
-    
+
     /* Ajuste de márgenes para cards en móviles */
     .card {
-        margin: 10px 0; /* Margen vertical de 10px, sin margen horizontal */
+        margin: 10px 0;
+        /* Margen vertical de 10px, sin margen horizontal */
     }
 }
 
@@ -145,38 +251,52 @@ main {
 /* ============================================ */
 
 @media (min-width: 768px) {
+
     /* Cambia la disposición del main a horizontal */
     main {
-        flex-direction: row; /* Dispone las cards horizontalmente */
-        flex-wrap: wrap; /* Permite que las cards se envuelvan si no caben */
-        justify-content: center; /* Centra las cards horizontalmente */
-        gap: 20px; /* Espacio de 20px entre las cards */
+        flex-direction: row;
+        /* Dispone las cards horizontalmente */
+        flex-wrap: wrap;
+        /* Permite que las cards se envuelvan si no caben */
+        justify-content: center;
+        /* Centra las cards horizontalmente */
+        gap: 20px;
+        /* Espacio de 20px entre las cards */
     }
-    
+
     /* Define el tamaño de cada caja-index para que quepan 3 en fila */
     .caja-index {
-        flex: 1 1 calc(33.333% - 40px); /* Cada card ocupa 1/3 del ancho menos el gap */
-        min-width: 280px; /* Ancho mínimo de 280px */
-        max-width: 400px; /* Ancho máximo de 400px */
+        flex: 1 1 calc(33.333% - 40px);
+        /* Cada card ocupa 1/3 del ancho menos el gap */
+        min-width: 280px;
+        /* Ancho mínimo de 280px */
+        max-width: 400px;
+        /* Ancho máximo de 400px */
     }
-    
+
     /* Elimina márgenes adicionales en versión desktop */
     .card {
-        margin: 0; /* Sin margen, el gap de main se encarga del espaciado */
+        margin: 0;
+        /* Sin margen, el gap de main se encarga del espaciado */
     }
 }
 
 /* Estilos para las imágenes dentro de caja-index */
 .caja-index img {
-    display: flex; /* Permite que la imagen sea flexible */
-    width: 100%; /* La imagen ocupa todo el ancho disponible */
-    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarla */
+    display: flex;
+    /* Permite que la imagen sea flexible */
+    width: 100%;
+    /* La imagen ocupa todo el ancho disponible */
+    object-fit: cover;
+    /* Recorta la imagen para llenar el espacio sin deformarla */
 }
 
 /* Estilos para los párrafos dentro de caja-index */
 .caja-index p {
-    margin: 20px 0; /* Margen vertical de 20px, sin margen horizontal */
-    text-align: justify; /* Justifica el texto para que se alinee a ambos lados */
+    margin: 20px 0;
+    /* Margen vertical de 20px, sin margen horizontal */
+    text-align: justify;
+    /* Justifica el texto para que se alinee a ambos lados */
 }
 
 /* ============================================ */
@@ -184,15 +304,24 @@ main {
 /* ============================================ */
 
 form {
-    display: flex; /* Convierte el formulario en un contenedor flex */
-    flex-direction: column; /* Apila los campos verticalmente */
-    max-width: 600px; /* Ancho máximo de 600px */
-    margin: 20px auto; /* Margen vertical de 20px y centrado horizontal */
-    padding: 20px; /* Espaciado interno de 20px */
-    border: 1px solid #ccc; /* Borde gris claro de 1px */
-    border-radius: 8px; /* Esquinas redondeadas */
-    background-color: #f9f9f9; /* Fondo gris muy claro */
-    text-align: center; /* Centra el texto del formulario */
+    display: flex;
+    /* Convierte el formulario en un contenedor flex */
+    flex-direction: column;
+    /* Apila los campos verticalmente */
+    max-width: 600px;
+    /* Ancho máximo de 600px */
+    margin: 20px auto;
+    /* Margen vertical de 20px y centrado horizontal */
+    padding: 20px;
+    /* Espaciado interno de 20px */
+    border: 1px solid #ccc;
+    /* Borde gris claro de 1px */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
+    background-color: #f9f9f9;
+    /* Fondo gris muy claro */
+    text-align: center;
+    /* Centra el texto del formulario */
 }
 
 /* ============================================ */
@@ -200,30 +329,42 @@ form {
 /* ============================================ */
 
 .footer-float {
-    color: #ffffff !important; /* Color de texto blanco */
-    background-image: linear-gradient(135deg, cornflowerblue, #0e5cee) !important; /* Gradiente azul de fondo */
-    margin-top: auto; /* Empuja el footer hacia abajo (pie pegado al final) */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    align-content: center; /* Centra verticalmente el contenido */
-    padding: 20px; /* Espaciado interno de 20px */
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    color: #ffffff !important;
+    /* Color de texto blanco */
+    background-image: linear-gradient(135deg, cornflowerblue, #0e5cee) !important;
+    /* Gradiente azul de fondo */
+    margin-top: auto;
+    /* Empuja el footer hacia abajo (pie pegado al final) */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    align-content: center;
+    /* Centra verticalmente el contenido */
+    padding: 20px;
+    /* Espaciado interno de 20px */
+    box-sizing: border-box;
+    /* Incluye padding y border en el ancho total */
 }
 
 /* Estilos para los enlaces del footer */
 .footer-float a {
-    color: #ffffff !important; /* Color de texto blanco */
-    text-decoration: none !important; /* Elimina el subrayado */
-    margin-left: 10%; /* Margen izquierdo del 10% */
+    color: #ffffff !important;
+    /* Color de texto blanco */
+    text-decoration: none !important;
+    /* Elimina el subrayado */
+    margin-left: 10%;
+    /* Margen izquierdo del 10% */
 }
 
 /* Alineación del contenido izquierdo del footer */
 .footer-float .izquierda {
-    float: left; /* Flota el contenido hacia la izquierda */
+    float: left;
+    /* Flota el contenido hacia la izquierda */
 }
 
 /* Alineación del contenido derecho del footer */
 .footer-float .derecha {
-    float: right; /* Flota el contenido hacia la derecha */
+    float: right;
+    /* Flota el contenido hacia la derecha */
 }
 
 /* ============================================ */
@@ -231,34 +372,44 @@ form {
 /* ============================================ */
 
 @media (max-width: 768px) {
+
     /* Ajuste de altura mínima del body en móviles */
     body {
-        min-height: 100%; /* Altura mínima del 100% */
+        min-height: 100%;
+        /* Altura mínima del 100% */
     }
-    
+
     /* Cambia el layout del footer a columna en móviles */
     .footer-float {
-        display: flex; /* Convierte el footer en contenedor flex */
-        flex-direction: column; /* Apila el contenido verticalmente */
-        text-align: center; /* Centra el texto */
-        padding: 15px; /* Reduce el padding a 15px */
+        display: flex;
+        /* Convierte el footer en contenedor flex */
+        flex-direction: column;
+        /* Apila el contenido verticalmente */
+        text-align: center;
+        /* Centra el texto */
+        padding: 15px;
+        /* Reduce el padding a 15px */
     }
-    
+
     /* Elimina el float en móviles para apilar verticalmente */
     .footer-float .izquierda,
     .footer-float .derecha {
-        float: none; /* Elimina el float */
-        margin: 10px 0; /* Margen vertical de 10px */
+        float: none;
+        /* Elimina el float */
+        margin: 10px 0;
+        /* Margen vertical de 10px */
     }
-    
+
     /* Ajusta el margen de los enlaces en móviles */
     .footer-float a {
-        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-left: 0;
+        /* Elimina el margen izquierdo */
     }
 
     /* Añade espacio inferior al main para que no se superponga con el footer */
     main {
-        padding-bottom: 4em; /* Espaciado inferior de 4em */
+        padding-bottom: 4em;
+        /* Espaciado inferior de 4em */
     }
 }
 
