@@ -407,9 +407,8 @@ form input[type="submit"]:hover {
     /* Empuja el footer hacia abajo (pie pegado al final) */
     width: 100%;
     /* Ocupa todo el ancho disponible */
-    align-content: center;
-    /* Centra verticalmente el contenido */
-    padding: 20px;
+    
+    padding: 5px;
     /* Espaciado interno de 20px */
     box-sizing: border-box;
     /* Incluye padding y border en el ancho total */
@@ -421,8 +420,7 @@ form input[type="submit"]:hover {
     /* Color de texto blanco */
     text-decoration: none !important;
     /* Elimina el subrayado */
-    margin-left: 10%;
-    /* Margen izquierdo del 10% */
+
 }
 
 /* Alineación del contenido izquierdo del footer */
