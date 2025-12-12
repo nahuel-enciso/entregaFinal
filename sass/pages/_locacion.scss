@@ -1,3 +1,5 @@
+@use '../utils/variables' as vrb;
+
 /* ============================================ */
 /* CSS PARA CARDS-MAP */
 /* ============================================ */
@@ -5,14 +7,13 @@
 .card-map {
     display: flex;
     flex-direction: column;
-    border: 1px solid #000000;
+    border: 1px solid vrb.$bordeysombra;
     border-radius: 8px;
-    box-shadow: 0 4px 8px #000000;
+    box-shadow: 0 4px 8px vrb.$bordeysombra;
     overflow: hidden;
     margin: 20px;
     padding: 0 10px;
-    /*margen para que las imagenes no queden pegadas al borde*/
     height: 100%;
-    max-width:1040px;
+    max-width: 1040px;
     text-align: center;
 }

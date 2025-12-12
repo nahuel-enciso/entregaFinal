@@ -48,20 +48,19 @@ body {
                 /* Permite que el card-body crezca para llenar el espacio disponible */
                 align-items: center;
                 justify-content: space-evenly;
-            }
 
-            /* Estilos para el título de la card */
-            .card-title {
-                font-size: 1.5em;
-                margin-bottom: 10px;
-            }
+                /* Estilos para el título de la card */
+                .card-title {
+                    font-size: 1.5em;
+                    margin-bottom: 10px;
+                }
 
-            /* Estilos para el texto descriptivo de la card */
-            .card-text {
-                font-size: 1em;
-                color: #555;
-                margin-bottom: auto;
-                /* Empuja el enlace hacia abajo, dejando este texto arriba */
+                .card-text {
+                    font-size: 1em;
+                    color: #555;
+                    margin-bottom: auto;
+                    /* Empuja el enlace hacia abajo, dejando este texto arriba */
+                }
             }
 
             /* Estilos para los enlaces/botones de las cards */
@@ -69,12 +68,12 @@ body {
                 text-align: center;
                 border: 1px solid vrb.$secondary-color;
                 border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 4px 8px vrb.$bordeysombra;
                 padding: 10px;
                 margin: 10px 10px 0 10px;
                 /* Margen: 10px a los costados, 0 arriba, 10px abajo */
                 text-decoration: none;
-                color: #ffffff;
+                color: vrb.$lightfont;
                 background-color: vrb.$secondary-color;
                 display: inline-block;
                 margin-top: auto;
@@ -82,7 +81,7 @@ body {
                 /* Alinea el botón al final del card-body (parte inferior) */
                 &hover {
                     /* Efecto hover para los enlaces de las cards */
-                    background-image:vrb,$gradclaro;
+                    background-image: vrb.$gradclaro;
                     /* Gradiente azul */
                 }
             }
@@ -121,4 +120,71 @@ body {
 
         }
     }
+}
+
+
+/* ============================================ */
+/* ESTILOS RESPONSIVE CAJA-INDEX/CARD PARA MÓVILES */
+/* Por defecto: columna única en dispositivos pequeños */
+/* ============================================ */
+
+@media (max-width: 767px) {
+
+    /* Espaciado entre cards en móviles */
+    .caja-index {
+        margin-bottom: 20px;
+    }
+
+    /* Ajuste de márgenes para cards en móviles */
+    .card {
+        margin: 10px 0;
+    }
+}
+
+/* ============================================ */
+/* ESTILOS RESPONSIVE CAJA-INDEX/CARD PARA TABLETS Y DESKTOP */
+/* A partir de 768px: 3 cards en fila  */
+/* ============================================ */
+
+@media (min-width: 768px) {
+
+    /* Cambia la disposición del main a horizontal */
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* Permite que las cards se envuelvan si no caben */
+        justify-content: center;
+
+        gap: 20px;
+
+        /* Define el tamaño de cada caja-index para que quepan 3 en fila */
+        .caja-index {
+            flex: 1 1 calc(33.333% - 40px);
+            /* Cada card ocupa 1/3 del ancho menos el gap */
+            min-width: 280px;
+            max-width: 400px;
+
+            /* Estilos para las imágenes dentro de caja-index */
+            img {
+                display: flex;
+                width: 100%;
+                /* La imagen ocupa todo el ancho disponible */
+                object-fit: contain;
+                /* Recorta la imagen para llenar el espacio sin deformarla */
+                border-radius: 8px;
+            }
+
+            /* Estilos para los párrafos dentro de caja-index */
+            p {
+                margin: 20px 0;
+                text-align: justify;
+            }
+        }
+       /* Elimina márgenes en versión desktop */
+        .card {
+            margin: 0;
+        }
+
+    }
+
 }

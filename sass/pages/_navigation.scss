@@ -1,20 +1,21 @@
+@use '../utils/variables' as vrb;
 /* ============================================ */
 /* CSS PARA LA BARRA DE NAVEGACION */
 /* ============================================ */
 
 .navbar {
-    color: #ffffff !important;
-    background-image: linear-gradient(135deg, cornflowerblue, #0e5cee) !important;
+    color: vrb.$lightfont !important;
+    background-image: vrb.$gradoscuro !important;
     width: 100%;
 
     /*Agrego los !important para que tome estos estilos y no los de bootstrap*/
     .nav-link {
         /* Estilos para los enlaces de navegación */
-        color: #ffffff !important;
-        background-color: linear-gradient(45deg, #0e5cee, cornflowerblue);
+        color: vrb.$lightfont !important;
+        background-image: vrb.$gradoscuro !important;
         /* Gradiente de fondo. */
         /* Estilo para el enlace activo (página actual) */
-        
+
         &:active {
             font-weight: 600;
             /* Hace el texto más grueso para destacar la página actual */
