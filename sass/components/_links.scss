@@ -1,0 +1,22 @@
+
+/* Estilos para los enlaces/botones de las cards */
+
+.card-link {
+    text-align: center;
+    border: 1px solid cornflowerblue;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    /* Margen: 10px a los costados, 0 arriba, 10px abajo */
+    text-decoration: none;
+    color: #ffffff;
+    background-color: cornflowerblue;
+    display: inline-block;
+    margin-top: auto;
+    /* Alinea el botón al final del card-body (parte inferior) */
+    &hover {/* Efecto hover para los enlaces de las cards */
+    background-image: linear-gradient(45deg, #2d69da, cornflowerblue);
+    /* Gradiente azul */
+}
+}

@@ -1,0 +1,67 @@
+
+/* ============================================ */
+/* CSS PARA FORMULARIO DE RESERVA */
+/* ============================================ */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    min-height: 65vh;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.card-res-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas en pantallas grandes */
+    gap: 15px 10px;
+    /* Espacio vertical y horizontal entre elementos */
+    max-width: 900px;
+    padding: 30px;
+    margin: 0 auto;
+    /* Centra el grid horizontalmente */
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    /* Incluye padding y border en el ancho */
+}
+
+.card-res-body label {
+    grid-column: span 1;
+    text-align: left;
+    font-weight: 600;
+}
+
+.card-res-body input,
+.card-res-body select {
+    grid-column: span 1;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Incluye padding y border en el ancho */
+}
+
+/* Estilos para el botón de submit */
+form input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+form input[type="submit"]:hover {
+    background-image: linear-gradient(45deg, #2d69da, cornflowerblue);
+}

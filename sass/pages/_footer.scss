@@ -1,0 +1,30 @@
+/* ============================================ */
+/* CSS PARA EL FOOTER FLOTANTE */
+/* ============================================ */
+
+.footer-float {
+    color: #ffffff !important;
+    background-image: linear-gradient(135deg, cornflowerblue, #0e5cee) !important;
+    margin-top: auto;
+    /* Empuja el footer hacia abajo (pie pegado al final) */
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    /* Incluye padding y border en el ancho total */
+}
+
+/* Estilos para los enlaces del footer */
+.footer-float a {
+    color: #ffffff !important;
+    text-decoration: none !important;    
+}
+
+/* Alineación del contenido izquierdo del footer */
+.footer-float .izquierda {
+    float: left;
+}
+
+/* Alineación del contenido derecho del footer */
+.footer-float .derecha {
+    float: right;
+}
