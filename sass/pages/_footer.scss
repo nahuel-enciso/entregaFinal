@@ -1,10 +1,11 @@
+@use '../utils/variables' as vrb;
 /* ============================================ */
 /* CSS PARA EL FOOTER FLOTANTE */
 /* ============================================ */
 
 .footer-float {
-    color: #ffffff !important;
-    background-image: linear-gradient(135deg, cornflowerblue, #0e5cee) !important;
+    color: vrb.$lightfont !important;
+    background-image: vrb.$gradoscuro !important;
     margin-top: auto;
     /* Empuja el footer hacia abajo (pie pegado al final) */
     width: 100%;
@@ -13,7 +14,7 @@
 
     /* Incluye padding y border en el ancho total */
     a {
-        color: #ffffff !important;
+        color:vrb.$lightfont !important;
         text-decoration: none !important;
     }
 

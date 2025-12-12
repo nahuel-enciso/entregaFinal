@@ -1,4 +1,4 @@
-
+@use '../utils/variables' as vrb;
 /* ============================================ */
 /* CSS PARA FORMULARIO DE RESERVA */
 /* ============================================ */
@@ -12,7 +12,7 @@ form {
     padding: 20px;
     border: 1px solid black;
     border-radius: 8px;
-    background-color: whitesmoke;
+    background-color: vrb.$card-background;
     text-align: center;
 }
 
@@ -53,8 +53,8 @@ form {
 form input[type="submit"] {
     margin-top: 20px;
     padding: 12px 24px;
-    background-color: cornflowerblue;
-    color: white;
+    background-color: vrb.$secondary-color;
+    color: vrb.$lightfont;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -63,5 +63,5 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-image: linear-gradient(45deg, #2d69da, cornflowerblue);
+    background-image: vrb.$gradoscuro;
 }

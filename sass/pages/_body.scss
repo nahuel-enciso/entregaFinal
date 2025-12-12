@@ -1,8 +1,10 @@
+@use '../utils/variables' as vrb;
+
 /* ESTILOS DEL BODY */
 body {
     display: flex;
     flex-direction: column;
-    background-color: #ddd;
+    background-color: vrb.$body-bg;
     min-height: 100vh;
     /* Asegura que el body ocupe al menos toda la altura de la ventana */
 
@@ -16,9 +18,9 @@ body {
         .card {
             display: flex;
             flex-direction: column;
-            border: 1px solid #000000;
+            border: 1px solid vrb.$bordeysombra;
             border-radius: 8px;
-            box-shadow: 0 4px 8px #000000;
+            box-shadow: 0 4px 8px vrb.$bordeysombra;
             overflow: hidden;
             margin: 20px;
             padding: 0 10px;
@@ -65,7 +67,7 @@ body {
             /* Estilos para los enlaces/botones de las cards */
             .card-link {
                 text-align: center;
-                border: 1px solid cornflowerblue;
+                border: 1px solid vrb.$secondary-color;
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 padding: 10px;
@@ -73,14 +75,14 @@ body {
                 /* Margen: 10px a los costados, 0 arriba, 10px abajo */
                 text-decoration: none;
                 color: #ffffff;
-                background-color: cornflowerblue;
+                background-color: vrb.$secondary-color;
                 display: inline-block;
                 margin-top: auto;
 
                 /* Alinea el botón al final del card-body (parte inferior) */
                 &hover {
                     /* Efecto hover para los enlaces de las cards */
-                    background-image: linear-gradient(45deg, #2d69da, cornflowerblue);
+                    background-image:vrb,$gradclaro;
                     /* Gradiente azul */
                 }
             }
@@ -97,9 +99,9 @@ body {
         .card-servicios {
             display: flex;
             flex-direction: column;
-            border: 1px solid #000000;
+            border: 1px solid vrb.$bordeysombra;
             border-radius: 8px;
-            box-shadow: 0 4px 8px #000000;
+            box-shadow: 0 4px 8px vrb.$bordeysombra;
             margin: 20px;
             padding: 0 10px;
             /*espacio para que las imagenes no queden pegadas al borde*/
@@ -114,7 +116,7 @@ body {
                 /*hago que la grilla tenga 3 columnas del mismo tamaño*/
                 align-items: center;
                 justify-content: space-evenly;
-                background-color: #ddd;
+                background-color: vrb.$body-bg;
             }
 
         }
