@@ -1,137 +1,122 @@
-/* ESTILOS GENERALES DEL BODY */
+/* ESTILOS DEL BODY */
 body {
     display: flex;
     flex-direction: column;
     background-color: #ddd;
     min-height: 100vh;
     /* Asegura que el body ocupe al menos toda la altura de la ventana */
-    
-}
 
-/* ============================================ */
-/* CSS PARA CARDS */
-/* ============================================ */
-/* CSS PARA CARDS DE HOTELES.HTML */
-/* ============================================ */
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
 
-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-}
+        .card {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px #000000;
+            overflow: hidden;
+            margin: 20px;
+            padding: 0 10px;
+            /*margen para que las imagenes no queden pegadas al borde*/
+            height: 100%;
+            text-align: center;
 
-.card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #000000;
-    overflow: hidden;
-    margin: 20px;
-    padding: 0 10px;
-    /*margen para que las imagenes no queden pegadas al borde*/
-    height: 100%;
-    text-align: center;
-}
+            /* Estilos para las imágenes de las cards */
+            .card-img-top {
+                width: 95%;
+                height: 250px;
+                /* Altura fija de 250px para todas las imágenes */
+                object-fit: contain;
+                border-radius: 8px;
+                /* Redondea las esquinas */
+            }
 
-/* Estilos específicos para el card-body de la sección reservar */
+            /* Estilos para el cuerpo de la card (contenido) */
+            .card-body {
+                padding: 15px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                /* Permite que el card-body crezca para llenar el espacio disponible */
+                align-items: center;
+                justify-content: space-evenly;
+            }
 
+            /* Estilos para el título de la card */
+            .card-title {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
 
-/* Estilos para las imágenes de las cards */
-.card-img-top {
-    width: 95%;
-    height: 250px;
-    /* Altura fija de 250px para todas las imágenes */
-    object-fit: contain;
-    border-radius: 8px;
-    /* Redondea las esquinas */
-}
+            /* Estilos para el texto descriptivo de la card */
+            .card-text {
+                font-size: 1em;
+                color: #555;
+                margin-bottom: auto;
+                /* Empuja el enlace hacia abajo, dejando este texto arriba */
+            }
 
-/* Estilos para el cuerpo de la card (contenido) */
-.card-body {
-    padding: 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    /* Permite que el card-body crezca para llenar el espacio disponible */
-    align-items: center;
-    justify-content: space-evenly;
-}
+            /* Estilos para los enlaces/botones de las cards */
+            .card-link {
+                text-align: center;
+                border: 1px solid cornflowerblue;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+                margin: 10px 10px 0 10px;
+                /* Margen: 10px a los costados, 0 arriba, 10px abajo */
+                text-decoration: none;
+                color: #ffffff;
+                background-color: cornflowerblue;
+                display: inline-block;
+                margin-top: auto;
 
-/* Estilos para el título de la card */
-.card-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
+                /* Alinea el botón al final del card-body (parte inferior) */
+                &hover {
+                    /* Efecto hover para los enlaces de las cards */
+                    background-image: linear-gradient(45deg, #2d69da, cornflowerblue);
+                    /* Gradiente azul */
+                }
+            }
+        }
 
-/* Estilos para el texto descriptivo de la card */
-.card-text {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: auto;
-    /* Empuja el enlace hacia abajo, dejando este texto arriba */
-}
+        /* Contenedor individual para cada card */
+        .caja-index {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 5px;
+        }
 
-/* Estilos para los enlaces/botones de las cards */
-.card-link {
-    text-align: center;
-    border: 1px solid cornflowerblue;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin: 10px 10px 0 10px;
-    /* Margen: 10px a los costados, 0 arriba, 10px abajo */
-    text-decoration: none;
-    color: #ffffff;
-    background-color: cornflowerblue;
-    display: inline-block;
-    margin-top: auto;
-    /* Alinea el botón al final del card-body (parte inferior) */
-    &hover {/* Efecto hover para los enlaces de las cards */
-    background-image: linear-gradient(45deg, #2d69da, cornflowerblue);
-    /* Gradiente azul */
-}
-}
+        .card-servicios {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px #000000;
+            margin: 20px;
+            padding: 0 10px;
+            /*espacio para que las imagenes no queden pegadas al borde*/
+            height: 100%;
+            /* Hace que todas las cards tengan la misma altura */
+            text-align: center;
 
+            .servicios-body {
+                display: grid;
+                /*hago que sea una grilla*/
+                grid-template-columns: 1fr 1fr 1fr;
+                /*hago que la grilla tenga 3 columnas del mismo tamaño*/
+                align-items: center;
+                justify-content: space-evenly;
+                background-color: #ddd;
+            }
 
-
-
-/* Contenedor individual para cada card */
-.caja-index {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 5px;
-}
-
-
-
-.card-servicios {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #000000;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #000000;
-    margin: 20px;
-    padding: 0 10px;
-    /*espacio para que las imagenes no queden pegadas al borde*/
-    height: 100%;
-    /* Hace que todas las cards tengan la misma altura */
-    text-align: center;
-
-
-
-.servicios-body {
-    display: grid;
-    /*hago que sea una grilla*/
-    grid-template-columns: 1fr 1fr 1fr;
-    /*hago que la grilla tenga 3 columnas del mismo tamaño*/
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #ddd;
-}
-
+        }
+    }
 }

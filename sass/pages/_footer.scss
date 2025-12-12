@@ -10,21 +10,18 @@
     width: 100%;
     padding: 5px;
     box-sizing: border-box;
+
     /* Incluye padding y border en el ancho total */
-}
+    a {
+        color: #ffffff !important;
+        text-decoration: none !important;
+    }
 
-/* Estilos para los enlaces del footer */
-.footer-float a {
-    color: #ffffff !important;
-    text-decoration: none !important;    
-}
+    .izquierda {
+        float: left;
+    }
 
-/* Alineación del contenido izquierdo del footer */
-.footer-float .izquierda {
-    float: left;
-}
-
-/* Alineación del contenido derecho del footer */
-.footer-float .derecha {
-    float: right;
+    .derecha {
+        float: right;
+    }
 }

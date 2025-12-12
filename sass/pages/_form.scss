@@ -10,9 +10,9 @@ form {
     min-height: 65vh;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: whitesmoke;
     text-align: center;
 }
 
@@ -43,7 +43,7 @@ form {
     grid-column: span 1;
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 4px;
     box-sizing: border-box;
     /* Incluye padding y border en el ancho */
