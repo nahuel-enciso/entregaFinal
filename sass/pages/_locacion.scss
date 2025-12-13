@@ -16,4 +16,9 @@
     height: 100%;
     max-width: 1040px;
     text-align: center;
+    .card-body{
+        .card-map-image{
+            object-fit:contain;
+        }
+    }
 }

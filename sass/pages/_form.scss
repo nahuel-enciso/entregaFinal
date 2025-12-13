@@ -7,72 +7,82 @@
 form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 900px;
     min-height: 65vh;
-    margin: 20px auto;
-    padding: 20px;
+    margin: auto;
+    padding: 10px;
     border: 1px solid vrb.$bordeysombra;
     border-radius: 8px;
     background-color: vrb.$card-bg;
     text-align: center;
-}
 
-.card-res-body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* 4 columnas en pantallas grandes */
-    gap: 15px 10px;
-    /* Espacio vertical y horizontal entre elementos */
-    max-width: 900px;
-    padding: 30px;
-    margin: 0 auto;
-    /* Centra el grid horizontalmente */
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-
-    /* Incluye padding y border en el ancho */
-    label {
-        grid-column: span 1;
-        text-align: left;
-        font-weight: 600;
-    }
-
-    input {
-        grid-column: span 1;
+    .card-res-body {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 3fr;
+        gap: 10px;
+        /* Espacio vertical y horizontal entre elementos */
+        max-width: 900px;
+        padding: 10px;
+        margin: 0 auto;
+        /* Centra el grid horizontalmente */
+        align-items: center;
         width: 100%;
-        padding: 8px;
-        border: 1px solid vrb.$bordeysombra;
-        border-radius: 4px;
         box-sizing: border-box;
+
         /* Incluye padding y border en el ancho */
-    }
-
-    select {
-        grid-column: span 1;
-        width: 100%;
-        padding: 8px;
-        border: 1px solid vrb.$bordeysombra;
-        border-radius: 4px;
-        box-sizing: border-box;
-        /* Incluye padding y border en el ancho */
-    }
-
-    input[type="submit"] {
-        margin-top: 20px;
-        padding: 12px 24px;
-        background-color: vrb.$secondary-color;
-        color: vrb.$lightfont;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 1.1em;
-        font-weight: 600;
-
-        &hover {
-            background-image: vrb.$gradoscuro;
+        label {
+            
+            text-align: left;
+            font-weight: 600;
         }
 
+        input,
+        select {
+            
+            width: 100%;
+            padding: 8px;
+            border: 1px solid vrb.$bordeysombra;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 12px 24px;
+            color: vrb.$lightfont;
+            background-color: vrb.$secondary-color;
+            border: 1px solid vrb.$bordeysombra;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+
+            &:hover {
+                background-image: vrb.$gradclaro;
+            }
+        }
+    }
+
+    .card-link {
+        text-align: center;
+        border: 1px solid vrb.$secondary-color;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px vrb.$bordeysombra;
+        padding: 10px;
+        margin: 10px 10px 0 10px;
+        /* Margen: 10px a los costados, 0 arriba, 10px abajo */
+        text-decoration: none;
+        color: vrb.$lightfont;
+        background-color: vrb.$secondary-color;
+        display: inline-block;
+        margin-top: auto;
+
+        /* Alinea el botón al final del card-body (parte inferior) */
+        &hover {
+            /* Efecto hover para los enlaces de las cards */
+            background-image: vrb.$gradclaro;
+            /* Gradiente azul */
+        }
     }
 }
 
@@ -83,8 +93,7 @@ form {
 
 @media (max-width: 768px) {
     .card-res-body {
-        grid-template-columns: 1fr 3fr;
-        /* cambio repeat(2, 1fr) por actual para hacer mayor el campo del input, en lugar del label;*/
+        grid-template-columns: 1fr 3fr; /* repeat(2, 1fr);
         /* 2 columnas en tablets */
     }
 
