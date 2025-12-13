@@ -1,190 +1,21 @@
 @use '../utils/variables' as vrb;
 
-/* ESTILOS DEL BODY */
+
+
+/* ESTILOS GENERALES DEL BODY */
 body {
     display: flex;
     flex-direction: column;
-    background-color: vrb.$body-bg;
+    background-color: #ddd;
     min-height: 100vh;
     /* Asegura que el body ocupe al menos toda la altura de la ventana */
-
-    main {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 0 auto;
-        padding: 20px;
-
-        .card {
-            display: flex;
-            flex-direction: column;
-            border: 1px solid vrb.$bordeysombra;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px vrb.$bordeysombra;
-            overflow: hidden;
-            margin: 20px;
-            padding: 0 10px;
-            /*margen para que las imagenes no queden pegadas al borde*/
-            height: 100%;
-            text-align: center;
-
-            /* Estilos para las imágenes de las cards */
-            .card-img-top {
-                width: 95%;
-                height: 250px;
-                /* Altura fija de 250px para todas las imágenes */
-                object-fit: contain;
-                border-radius: 8px;
-                /* Redondea las esquinas */
-            }
-
-            /* Estilos para el cuerpo de la card (contenido) */
-            .card-body {
-                padding: 15px;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                flex-grow: 1;
-                /* Permite que el card-body crezca para llenar el espacio disponible */
-                align-items: center;
-                justify-content: space-evenly;
-
-                /* Estilos para el título de la card */
-                .card-title {
-                    font-size: 1.5em;
-                    margin-bottom: 10px;
-                }
-
-                .card-text {
-                    font-size: 1em;
-                    color: #555;
-                    margin-bottom: auto;
-                    /* Empuja el enlace hacia abajo, dejando este texto arriba */
-                }
-            }
-
-            /* Estilos para los enlaces/botones de las cards */
-            .card-link {
-                text-align: center;
-                border: 1px solid vrb.$secondary-color;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px vrb.$bordeysombra;
-                padding: 10px;
-                margin: 10px 10px 0 10px;
-                /* Margen: 10px a los costados, 0 arriba, 10px abajo */
-                text-decoration: none;
-                color: vrb.$lightfont;
-                background-color: vrb.$secondary-color;
-                display: inline-block;
-                margin-top: auto;
-
-                /* Alinea el botón al final del card-body (parte inferior) */
-                &hover {
-                    /* Efecto hover para los enlaces de las cards */
-                    background-image: vrb.$gradclaro;
-                    /* Gradiente azul */
-                }
-            }
-        }
-
-        /* Contenedor individual para cada card */
-        .caja-index {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            padding: 5px;
-        }
-
-        .card-servicios {
-            display: flex;
-            flex-direction: column;
-            border: 1px solid vrb.$bordeysombra;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px vrb.$bordeysombra;
-            margin: 20px;
-            padding: 0 10px;
-            /*espacio para que las imagenes no queden pegadas al borde*/
-            height: 100%;
-            /* Hace que todas las cards tengan la misma altura */
-            text-align: center;
-
-            .servicios-body {
-                display: grid;
-                /*hago que sea una grilla*/
-                grid-template-columns: 1fr 1fr 1fr;
-                /*hago que la grilla tenga 3 columnas del mismo tamaño*/
-                align-items: center;
-                justify-content: space-evenly;
-                background-color: vrb.$body-bg;
-            }
-
-        }
-    }
 }
 
 
-/* ============================================ */
-/* ESTILOS RESPONSIVE CAJA-INDEX/CARD PARA MÓVILES */
-/* Por defecto: columna única en dispositivos pequeños */
-/* ============================================ */
-
-@media (max-width: 767px) {
-
-    /* Espaciado entre cards en móviles */
-    .caja-index {
-        margin-bottom: 20px;
-    }
-
-    /* Ajuste de márgenes para cards en móviles */
-    .card {
-        margin: 10px 0;
-    }
-}
-
-/* ============================================ */
-/* ESTILOS RESPONSIVE CAJA-INDEX/CARD PARA TABLETS Y DESKTOP */
-/* A partir de 768px: 3 cards en fila  */
-/* ============================================ */
-
-@media (min-width: 768px) {
-
-    /* Cambia la disposición del main a horizontal */
-    main {
-        flex-direction: row;
-        flex-wrap: wrap;
-        /* Permite que las cards se envuelvan si no caben */
-        justify-content: center;
-
-        gap: 20px;
-
-        /* Define el tamaño de cada caja-index para que quepan 3 en fila */
-        .caja-index {
-            flex: 1 1 calc(33.333% - 40px);
-            /* Cada card ocupa 1/3 del ancho menos el gap */
-            min-width: 280px;
-            max-width: 400px;
-
-            /* Estilos para las imágenes dentro de caja-index */
-            img {
-                display: flex;
-                width: 100%;
-                /* La imagen ocupa todo el ancho disponible */
-                object-fit: contain;
-                /* Recorta la imagen para llenar el espacio sin deformarla */
-                border-radius: 8px;
-            }
-
-            /* Estilos para los párrafos dentro de caja-index */
-            p {
-                margin: 20px 0;
-                text-align: justify;
-            }
-        }
-       /* Elimina márgenes en versión desktop */
-        .card {
-            margin: 0;
-        }
-
-    }
-
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
 }

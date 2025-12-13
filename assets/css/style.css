@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*// STYLE.CSS // */
 /* ESTILOS GENERALES DEL BODY */
 body {
   display: flex;
@@ -9,26 +8,31 @@ body {
   /* Asegura que el body ocupe al menos toda la altura de la ventana */
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 /* ============================================ */
 /* CSS PARA LA BARRA DE NAVEGACION */
 /* ============================================ */
 .navbar {
   color: #ffffff !important;
-  background-image: linear-gradient(135deg, cornflowerblue, #0e5cee) !important;
+  background-image: linear-gradient(45deg, #0e5cee, cornflowerblue) !important;
   width: 100%;
   /*Agrego los !important para que tome estos estilos y no los de bootstrap*/
 }
-
-/* Estilos para los enlaces de navegación */
 .navbar .nav-link {
+  /* Estilos para los enlaces de navegación */
   color: #ffffff !important;
-  background-color: linear-gradient(45deg, #0e5cee, cornflowerblue);
-  /* Gradiente de fondo */
-  /*Agrego los !important para que tome estos estilos y no los de bootstrap*/
+  background-image: cornflowerblue !important;
+  /* Gradiente de fondo. */
+  /* Estilo para el enlace activo (página actual) */
 }
-
-/* Estilo para el enlace activo (página actual) */
-.nav-link.active {
+.navbar .nav-link:active {
   font-weight: 600;
   /* Hace el texto más grueso para destacar la página actual */
 }
@@ -38,14 +42,6 @@ body {
 /* ============================================ */
 /* CSS PARA CARDS DE HOTELES.HTML */
 /* ============================================ */
-main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -59,10 +55,8 @@ main {
   height: 100%;
   text-align: center;
 }
-
-/* Estilos específicos para el card-body de la sección reservar */
-/* Estilos para las imágenes de las cards */
-.card-img-top {
+.card .card-img-top {
+  /* Estilos para las imágenes de las cards */
   width: 95%;
   height: 250px;
   /* Altura fija de 250px para todas las imágenes */
@@ -71,9 +65,8 @@ main {
   border-radius: 8px;
   /* Redondea las esquinas */
 }
-
-/* Estilos para el cuerpo de la card (contenido) */
-.card-body {
+.card .card-body {
+  /* Estilos para el cuerpo de la card (contenido) */
   padding: 15px;
   text-align: center;
   display: flex;
@@ -301,8 +294,9 @@ form input[type=submit]:hover {
 /* ============================================ */
 @media (max-width: 768px) {
   .card-res-body {
-    grid-template-columns: 1fr 3fr; /* repeat(2, 1fr);
-/* 2 columnas en tablets */
+    grid-template-columns: 1fr 3fr;
+    /* repeat(2, 1fr);
+    /* 2 columnas en tablets */
   }
   form {
     min-height: 70vh;
